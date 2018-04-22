@@ -13,7 +13,7 @@ type baseController struct {
 	controllerName string
 	actionName     string
 }
-
+// prepare
 func (p *baseController) Prepare()  {
 	controllerName, actionName := p.GetControllerAndAction()
 	p.controllerName = strings.ToLower(controllerName[0 : len(controllerName)-10])
